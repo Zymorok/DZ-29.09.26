@@ -15,6 +15,7 @@ export function Cell({ value, onCellClick, isWinner }: CellProps) {
 
   return (
     <Pressable
+      cssInterop={false}
       onPress={onCellClick}
       style={({ pressed }) => [
         styles.cell,
