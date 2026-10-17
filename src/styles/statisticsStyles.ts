@@ -1,0 +1,163 @@
+import { StyleSheet } from "react-native";
+import { ThemeColors } from "@/context/ThemeContext";
+
+export const createStyles = (colors: ThemeColors) =>
+  StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: colors.bg,
+    },
+    content: {
+      padding: 20,
+      alignItems: "center",
+    },
+    title: {
+      fontSize: 22,
+      fontWeight: "700",
+      color: colors.text,
+      marginBottom: 20,
+      marginTop: 8,
+    },
+    themeCard: {
+      width: "100%",
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+      paddingVertical: 14,
+      paddingHorizontal: 16,
+      borderRadius: 12,
+      borderWidth: 1,
+      borderColor: colors.border,
+      backgroundColor: colors.surface,
+      marginBottom: 20,
+      elevation: 2,
+      shadowColor: colors.cardShadow,
+      shadowOffset: { width: 0, height: 1 },
+      shadowOpacity: 0.05,
+      shadowRadius: 2,
+    },
+    themeInfo: {
+      flexDirection: "row",
+      alignItems: "center",
+      gap: 12,
+    },
+    themeText: {
+      fontSize: 16,
+      fontWeight: "600",
+      color: colors.text,
+    },
+    grid: {
+      width: "100%",
+      flexDirection: "row",
+      flexWrap: "wrap",
+      justifyContent: "space-between",
+      gap: 14,
+      marginBottom: 24,
+    },
+    card: {
+      width: "47%",
+      backgroundColor: colors.surface,
+      padding: 16,
+      borderRadius: 12,
+      alignItems: "center",
+      borderTopWidth: 4,
+      shadowColor: colors.cardShadow,
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.06,
+      shadowRadius: 4,
+      elevation: 2,
+    },
+    cardTotal: {
+      borderTopColor: colors.textMuted,
+    },
+    cardX: {
+      borderTopColor: colors.xMark,
+    },
+    cardO: {
+      borderTopColor: colors.oMark,
+    },
+    cardDraw: {
+      borderTopColor: colors.draw,
+    },
+    playerBadgeX: {
+      fontSize: 26,
+      fontWeight: "900",
+      color: colors.xMark,
+    },
+    playerBadgeO: {
+      fontSize: 26,
+      fontWeight: "900",
+      color: colors.oMark,
+    },
+    cardNumber: {
+      fontSize: 28,
+      fontWeight: "800",
+      color: colors.text,
+      marginVertical: 4,
+    },
+    cardLabel: {
+      fontSize: 13,
+      fontWeight: "500",
+      color: colors.textMuted,
+    },
+    resetButton: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+      gap: 8,
+      backgroundColor: colors.danger,
+      paddingVertical: 12,
+      paddingHorizontal: 20,
+      borderRadius: 8,
+      width: "100%",
+    },
+    resetButtonDisabled: {
+      backgroundColor: colors.dangerDisabled,
+    },
+    resetText: {
+      color: "#FFFFFF",
+      fontSize: 15,
+      fontWeight: "600",
+    },
+    userCard: {
+      width: "100%",
+      flexDirection: "row",
+      alignItems: "center",
+      backgroundColor: colors.surface,
+      padding: 16,
+      borderRadius: 12,
+      borderWidth: 1,
+      borderColor: colors.border,
+      marginBottom: 16,
+      shadowColor: colors.cardShadow,
+      shadowOffset: { width: 0, height: 1 },
+      shadowOpacity: 0.05,
+      shadowRadius: 2,
+      elevation: 2,
+    },
+    userAvatar: {
+      width: 44,
+      height: 44,
+      borderRadius: 22,
+      backgroundColor: colors.primary,
+      justifyContent: "center",
+      alignItems: "center",
+      marginRight: 14,
+    },
+    userInfo: {
+      flex: 1,
+    },
+    userName: {
+      fontSize: 16,
+      fontWeight: "700",
+      color: colors.text,
+    },
+    userEmail: {
+      fontSize: 13,
+      color: colors.textMuted,
+      marginTop: 2,
+    },
+    signOutBtn: {
+      padding: 8,
+    },
+  });
